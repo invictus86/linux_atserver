@@ -1,0 +1,122 @@
+2022-07-04 15:03:46,852 - E:/ivan_code/linux_atserver/linux_atserver.py[line:67] - INFO: ('192.168.1.41', 57732) connected
+2022-07-04 15:03:46,852 - E:/ivan_code/linux_atserver/linux_atserver.py[line:73] - INFO: receive data--- ':DTA:FILE X:\\Ivan\\autotest\\smoke_test\\QE_HD_Channel_test_1.ts -1\r\n'
+2022-07-04 15:03:47,308 - E:/ivan_code/linux_atserver/linux_atserver.py[line:269] - INFO: streamxpress receive data--- {'rec_data': 0, 'result': True}
+2022-07-04 15:03:47,309 - E:/ivan_code/linux_atserver/linux_atserver.py[line:73] - INFO: receive data--- ''
+2022-07-04 15:26:40,066 - E:/ivan_code/linux_atserver/linux_atserver.py[line:67] - INFO: ('192.168.1.41', 59798) connected
+2022-07-04 15:26:40,068 - E:/ivan_code/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':DTA:PLAY \r\n'
+2022-07-04 15:27:09,630 - E:/ivan_code/linux_atserver/linux_atserver.py[line:67] - INFO: ('192.168.1.41', 59802) connected
+2022-07-04 15:27:09,630 - E:/ivan_code/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':DTA:PLAY \r\n'
+2022-07-04 15:27:09,778 - E:/ivan_code/linux_atserver/linux_atserver.py[line:293] - INFO: streamxpress receive data   {'rec_data': 0, 'result': True}
+2022-07-04 15:27:09,779 - E:/ivan_code/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ''
+2022-07-04 15:27:43,440 - E:/ivan_code/linux_atserver/linux_atserver.py[line:67] - INFO: ('192.168.1.41', 59806) connected
+2022-07-04 15:27:43,440 - E:/ivan_code/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':DTA:PLAY \r\n'
+2022-07-04 15:27:43,588 - E:/ivan_code/linux_atserver/linux_atserver.py[line:293] - INFO: streamxpress receive data   {'rec_data': 0, 'result': True}
+2022-07-04 15:27:43,589 - E:/ivan_code/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ''
+2022-07-04 15:39:57,378 - E:/ivan_code/linux_atserver/linux_atserver.py[line:67] - INFO: ('192.168.1.41', 49181) connected
+2022-07-04 15:39:57,380 - E:/ivan_code/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':DTA:PAUSE \r\n'
+2022-07-04 15:39:57,460 - E:/ivan_code/linux_atserver/linux_atserver.py[line:302] - INFO: streamxpress receive data   {'rec_data': 0, 'result': True}
+2022-07-04 15:39:57,463 - E:/ivan_code/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ''
+2022-07-04 15:41:05,780 - E:/ivan_code/linux_atserver/linux_atserver.py[line:67] - INFO: ('192.168.1.41', 49191) connected
+2022-07-04 15:41:05,780 - E:/ivan_code/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':DTA:STOP \r\n'
+2022-07-04 15:41:05,862 - E:/ivan_code/linux_atserver/linux_atserver.py[line:311] - INFO: streamxpress receive data   {'rec_data': 0, 'result': True}
+2022-07-04 15:41:05,865 - E:/ivan_code/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ''
+2022-07-04 15:41:14,776 - E:/ivan_code/linux_atserver/linux_atserver.py[line:67] - INFO: ('192.168.1.41', 49194) connected
+2022-07-04 15:41:14,776 - E:/ivan_code/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':DTA:STOP \r\n'
+2022-07-04 15:41:14,892 - E:/ivan_code/linux_atserver/linux_atserver.py[line:311] - INFO: streamxpress receive data   {'rec_data': 0, 'result': True}
+2022-07-04 15:41:14,894 - E:/ivan_code/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ''
+2022-07-04 15:41:41,361 - E:/ivan_code/linux_atserver/linux_atserver.py[line:67] - INFO: ('192.168.1.41', 49196) connected
+2022-07-04 15:41:41,361 - E:/ivan_code/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':DTA:STOP \r\n'
+2022-07-04 15:41:41,437 - E:/ivan_code/linux_atserver/linux_atserver.py[line:311] - INFO: streamxpress receive data   {'rec_data': 0, 'result': True}
+2022-07-04 15:41:41,437 - E:/ivan_code/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ''
+2022-07-04 15:41:46,141 - E:/ivan_code/linux_atserver/linux_atserver.py[line:67] - INFO: ('192.168.1.41', 49197) connected
+2022-07-04 15:41:46,142 - E:/ivan_code/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':DTA:STOP \r\n'
+2022-07-04 15:41:46,221 - E:/ivan_code/linux_atserver/linux_atserver.py[line:311] - INFO: streamxpress receive data   {'rec_data': 0, 'result': True}
+2022-07-04 15:41:46,223 - E:/ivan_code/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ''
+2022-07-04 15:41:52,157 - E:/ivan_code/linux_atserver/linux_atserver.py[line:67] - INFO: ('192.168.1.41', 49198) connected
+2022-07-04 15:41:52,158 - E:/ivan_code/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':DTA:STOP \r\n'
+2022-07-04 15:41:52,239 - E:/ivan_code/linux_atserver/linux_atserver.py[line:311] - INFO: streamxpress receive data   {'rec_data': 0, 'result': True}
+2022-07-04 15:41:52,240 - E:/ivan_code/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ''
+2022-07-04 15:42:00,395 - E:/ivan_code/linux_atserver/linux_atserver.py[line:67] - INFO: ('192.168.1.41', 49199) connected
+2022-07-04 15:42:00,397 - E:/ivan_code/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':DTA:STOP \r\n'
+2022-07-04 15:42:00,482 - E:/ivan_code/linux_atserver/linux_atserver.py[line:311] - INFO: streamxpress receive data   {'rec_data': 0, 'result': True}
+2022-07-04 15:42:00,483 - E:/ivan_code/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ''
+2022-07-04 15:42:08,302 - E:/ivan_code/linux_atserver/linux_atserver.py[line:67] - INFO: ('192.168.1.41', 49200) connected
+2022-07-04 15:42:08,302 - E:/ivan_code/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':DTA:STOP \r\n'
+2022-07-04 15:42:08,378 - E:/ivan_code/linux_atserver/linux_atserver.py[line:311] - INFO: streamxpress receive data   {'rec_data': 0, 'result': True}
+2022-07-04 15:42:08,378 - E:/ivan_code/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ''
+2022-07-04 16:10:01,655 - E:/ivan_code/linux_atserver/linux_atserver.py[line:67] - INFO: ('192.168.1.41', 49682) connected
+2022-07-04 16:10:01,655 - E:/ivan_code/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':DTA:RF_ENABLED_ON_STOP 1\r\n'
+2022-07-04 16:10:52,693 - E:/ivan_code/linux_atserver/linux_atserver.py[line:67] - INFO: ('192.168.1.41', 49697) connected
+2022-07-04 16:10:52,694 - E:/ivan_code/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':DTA:RF_ENABLED_ON_STOP 1\r\n'
+2022-07-04 16:10:52,898 - E:/ivan_code/linux_atserver/linux_atserver.py[line:320] - INFO: streamxpress receive data   {'rec_data': 0, 'result': True}
+2022-07-04 16:10:52,901 - E:/ivan_code/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ''
+2022-07-04 16:17:58,552 - E:/ivan_code/linux_atserver/linux_atserver.py[line:67] - INFO: ('192.168.1.41', 49776) connected
+2022-07-04 16:17:58,552 - E:/ivan_code/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':DTA:RF_ENABLED_ON_STOP 0\r\n'
+2022-07-04 16:17:58,686 - E:/ivan_code/linux_atserver/linux_atserver.py[line:329] - INFO: streamxpress receive data   {'rec_data': 0, 'result': True}
+2022-07-04 16:17:58,687 - E:/ivan_code/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ''
+2022-07-04 16:21:11,250 - E:/ivan_code/linux_atserver/linux_atserver.py[line:67] - INFO: ('192.168.1.41', 49826) connected
+2022-07-04 16:21:11,250 - E:/ivan_code/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':DTA:RF_ENABLED_ON_STOP 0\r\n'
+2022-07-04 16:21:11,382 - E:/ivan_code/linux_atserver/linux_atserver.py[line:329] - INFO: streamxpress receive data   {'rec_data': 0, 'result': True}
+2022-07-04 16:21:11,384 - E:/ivan_code/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ''
+2022-07-04 16:24:44,494 - E:/ivan_code/linux_atserver/linux_atserver.py[line:67] - INFO: ('192.168.1.41', 49900) connected
+2022-07-04 16:24:44,494 - E:/ivan_code/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':DTA:TOTAL_TIME 1\r\n'
+2022-07-04 16:25:45,503 - E:/ivan_code/linux_atserver/linux_atserver.py[line:67] - INFO: ('192.168.1.41', 49909) connected
+2022-07-04 16:25:45,503 - E:/ivan_code/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':DTA:TOTAL_TIME 1\r\n'
+2022-07-04 16:25:45,509 - E:/ivan_code/linux_atserver/linux_atserver.py[line:338] - INFO: streamxpress receive data   {'result': True, 'TimeLoopEnd': 1136.753167}
+2022-07-04 16:25:45,510 - E:/ivan_code/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ''
+2022-07-04 16:26:23,552 - E:/ivan_code/linux_atserver/linux_atserver.py[line:67] - INFO: ('192.168.1.41', 49913) connected
+2022-07-04 16:26:23,552 - E:/ivan_code/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':DTA:TOTAL_TIME 1\r\n'
+2022-07-04 16:26:23,559 - E:/ivan_code/linux_atserver/linux_atserver.py[line:338] - INFO: streamxpress receive data   {'result': True, 'TimeLoopEnd': 1136.753167}
+2022-07-04 16:26:23,562 - E:/ivan_code/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ''
+2022-07-04 16:28:19,056 - E:/ivan_code/linux_atserver/linux_atserver.py[line:67] - INFO: ('192.168.1.41', 49934) connected
+2022-07-04 16:28:19,056 - E:/ivan_code/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':DTA:RELATIVE_POSITION 1\r\n'
+2022-07-04 16:28:19,062 - E:/ivan_code/linux_atserver/linux_atserver.py[line:347] - INFO: streamxpress receive data   {'result': True, 'PosRel': 0.071248}
+2022-07-04 16:28:19,063 - E:/ivan_code/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ''
+2022-07-04 16:28:23,493 - E:/ivan_code/linux_atserver/linux_atserver.py[line:67] - INFO: ('192.168.1.41', 49936) connected
+2022-07-04 16:28:23,493 - E:/ivan_code/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':DTA:RELATIVE_POSITION 1\r\n'
+2022-07-04 16:28:23,497 - E:/ivan_code/linux_atserver/linux_atserver.py[line:347] - INFO: streamxpress receive data   {'result': True, 'PosRel': 0.075145}
+2022-07-04 16:28:23,500 - E:/ivan_code/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ''
+2022-07-04 16:28:25,401 - E:/ivan_code/linux_atserver/linux_atserver.py[line:67] - INFO: ('192.168.1.41', 49937) connected
+2022-07-04 16:28:25,401 - E:/ivan_code/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':DTA:RELATIVE_POSITION 1\r\n'
+2022-07-04 16:28:25,408 - E:/ivan_code/linux_atserver/linux_atserver.py[line:347] - INFO: streamxpress receive data   {'result': True, 'PosRel': 0.07682}
+2022-07-04 16:28:25,410 - E:/ivan_code/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ''
+2022-07-04 16:28:27,466 - E:/ivan_code/linux_atserver/linux_atserver.py[line:67] - INFO: ('192.168.1.41', 49938) connected
+2022-07-04 16:28:27,467 - E:/ivan_code/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':DTA:RELATIVE_POSITION 1\r\n'
+2022-07-04 16:28:27,470 - E:/ivan_code/linux_atserver/linux_atserver.py[line:347] - INFO: streamxpress receive data   {'result': True, 'PosRel': 0.078645}
+2022-07-04 16:28:27,471 - E:/ivan_code/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ''
+2022-07-04 16:28:43,375 - E:/ivan_code/linux_atserver/linux_atserver.py[line:67] - INFO: ('192.168.1.41', 49943) connected
+2022-07-04 16:28:43,375 - E:/ivan_code/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':DTA:RELATIVE_POSITION 1\r\n'
+2022-07-04 16:28:43,380 - E:/ivan_code/linux_atserver/linux_atserver.py[line:347] - INFO: streamxpress receive data   {'result': True, 'PosRel': 0.092642}
+2022-07-04 16:28:43,381 - E:/ivan_code/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ''
+2022-07-04 16:32:42,615 - E:/ivan_code/linux_atserver/linux_atserver.py[line:67] - INFO: ('192.168.1.41', 49973) connected
+2022-07-04 16:32:42,615 - E:/ivan_code/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':DTA:SET_DVBT_CON_TYPE QPSK\r\n'
+2022-07-04 16:32:42,700 - E:/ivan_code/linux_atserver/linux_atserver.py[line:356] - INFO: streamxpress receive data   {'rec_data': 0, 'result': True}
+2022-07-04 16:32:42,700 - E:/ivan_code/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ''
+2022-07-04 16:33:04,071 - E:/ivan_code/linux_atserver/linux_atserver.py[line:67] - INFO: ('192.168.1.41', 49983) connected
+2022-07-04 16:33:04,072 - E:/ivan_code/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':DTA:SET_DVBT_CON_TYPE QPSK\r\n'
+2022-07-04 16:33:04,174 - E:/ivan_code/linux_atserver/linux_atserver.py[line:356] - INFO: streamxpress receive data   {'rec_data': 0, 'result': True}
+2022-07-04 16:33:04,174 - E:/ivan_code/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ''
+2022-07-04 16:33:10,368 - E:/ivan_code/linux_atserver/linux_atserver.py[line:67] - INFO: ('192.168.1.41', 49985) connected
+2022-07-04 16:33:10,368 - E:/ivan_code/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':DTA:SET_DVBT_CON_TYPE QPSK\r\n'
+2022-07-04 16:33:10,447 - E:/ivan_code/linux_atserver/linux_atserver.py[line:356] - INFO: streamxpress receive data   {'rec_data': 0, 'result': True}
+2022-07-04 16:33:10,448 - E:/ivan_code/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ''
+2022-07-04 16:34:13,895 - E:/ivan_code/linux_atserver/linux_atserver.py[line:67] - INFO: ('192.168.1.41', 49994) connected
+2022-07-04 16:34:13,895 - E:/ivan_code/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':DTA:SET_DVBT_CON_TYPE 16-QAM\r\n'
+2022-07-04 16:34:13,974 - E:/ivan_code/linux_atserver/linux_atserver.py[line:365] - INFO: streamxpress receive data   {'rec_data': 0, 'result': True}
+2022-07-04 16:34:13,976 - E:/ivan_code/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ''
+2022-07-04 16:34:31,769 - E:/ivan_code/linux_atserver/linux_atserver.py[line:67] - INFO: ('192.168.1.41', 50001) connected
+2022-07-04 16:34:31,769 - E:/ivan_code/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':DTA:SET_DVBT_CON_TYPE 16-QAM\r\n'
+2022-07-04 16:34:31,849 - E:/ivan_code/linux_atserver/linux_atserver.py[line:365] - INFO: streamxpress receive data   {'rec_data': 0, 'result': True}
+2022-07-04 16:34:31,851 - E:/ivan_code/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ''
+2022-07-04 16:35:35,148 - E:/ivan_code/linux_atserver/linux_atserver.py[line:67] - INFO: ('192.168.1.41', 50010) connected
+2022-07-04 16:35:35,148 - E:/ivan_code/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':DTA:SET_DVBT_CON_TYPE 64-QAM\r\n'
+2022-07-04 16:35:35,227 - E:/ivan_code/linux_atserver/linux_atserver.py[line:374] - INFO: streamxpress receive data   {'rec_data': 0, 'result': True}
+2022-07-04 16:35:35,230 - E:/ivan_code/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ''
+2022-07-04 16:35:52,549 - E:/ivan_code/linux_atserver/linux_atserver.py[line:67] - INFO: ('192.168.1.41', 50018) connected
+2022-07-04 16:35:52,549 - E:/ivan_code/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':DTA:SET_DVBT_CON_TYPE 64-QAM\r\n'
+2022-07-04 16:35:52,645 - E:/ivan_code/linux_atserver/linux_atserver.py[line:374] - INFO: streamxpress receive data   {'rec_data': 0, 'result': True}
+2022-07-04 16:35:52,647 - E:/ivan_code/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ''
+2022-07-04 16:36:04,292 - E:/ivan_code/linux_atserver/linux_atserver.py[line:67] - INFO: ('192.168.1.41', 50021) connected
+2022-07-04 16:36:04,292 - E:/ivan_code/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':DTA:SET_DVBT_CON_TYPE 64-QAM\r\n'
+2022-07-04 16:36:04,369 - E:/ivan_code/linux_atserver/linux_atserver.py[line:374] - INFO: streamxpress receive data   {'rec_data': 0, 'result': True}
+2022-07-04 16:36:04,371 - E:/ivan_code/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ''
