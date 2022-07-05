@@ -21,6 +21,7 @@ cmd_key_2_up = '81 82 00 04 00 00 02 4A 00 00 00 00 83 84'  # key 2 up
 cmd_key_3_up = '81 82 00 04 00 00 02 4B 00 00 00 00 83 84'  # key 3 up
 cmd_key_4_up = '81 82 00 04 00 00 02 4C 00 00 00 00 83 84'  # key 4 up
 cmd_key_5_up = '81 82 00 04 00 00 02 4D 00 00 00 00 83 84'  # key 5 up
+cmd_key_all_up = '81 82 00 04 00 00 02 48 00 00 00 00 83 84'  # key all up
 
 cmd_key_1_down = '81 82 00 04 00 00 02 41 00 00 00 00 83 84'  # key 1 down
 cmd_key_2_down = '81 82 00 04 00 00 02 42 00 00 00 00 83 84'  # key 2 down
@@ -35,6 +36,7 @@ cmd_ethernet_disconnect = '81 82 00 04 00 00 02 10 00 00 00 00 83 84'  # etherne
 cmd_ethernet_connect = '81 82 00 04 00 00 02 20 00 00 00 00 83 84'  # ethernet_connect
 
 cmd_get_all_status = '81 82 00 04 00 00 01 04 00 00 00 00 83 84'  # get_all_status
+cmd_get_mcu_info = '81 82 00 04 00 00 00 00 00 00 00 00 83 84'  # get_all_status
 
 
 class Ekt_Rdsp():
@@ -61,11 +63,9 @@ class Ekt_Rdsp():
             print('no data receive')
         if count > 0:
             rec_data = self.com.read(count)
-        if rec_data != b'':
-            # 将接受的16进制数据格式如b'h\x12\x90xV5\x12h\x91\n4737E\xc3\xab\x89hE\xe0\x16'
-            #                      转换成b'6812907856351268910a3437333745c3ab896845e016'
-            #                      通过[]去除前后的b'',得到我们真正想要的数据
-            print("receive", str(binascii.b2a_hex(rec_data))[2:-1])
+            # print rec_data
+            rec_data = str(binascii.b2a_hex(rec_data))
+            # print rec_data
 
         self.com.flushInput()  # 清除缓存区数据。当代码在循环中执行时，不加这句代码会造成count累加
         return rec_data
@@ -79,4 +79,6 @@ if __name__ == '__main__':
     # com = serial.Serial('COM4', 115200, timeout=5)
     rdsp = Ekt_Rdsp('COM4', 115200, timeout=5)
     # rdsp.send_rec_serial(cmd_power_off)
-    rdsp.send_rec_serial(cmd_power_on)
+    res_data = rdsp.send_rec_serial(cmd_get_all_status)
+    # print type(res_data)
+    # print len(res_data)

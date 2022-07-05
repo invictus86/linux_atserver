@@ -30,8 +30,8 @@ command_rds_rf_off = ":RDS:RF_OFF \r\n"
 
 # RDSP
 command_rdsp_connection = ":RDSP:CONNECTION \r\n"
-command_rdsp_mcu_info = ":RDSP:MCU_INFO \r\n"
-command_rdsp_hw_data = ":RDSP:STB_HW_DATA \r\n"
+command_rdsp_mcu_info = ":RDSP:MCU_INFO\r\n"
+command_rdsp_hw_data = ":RDSP:STB_HW_DATA\r\n"
 command_rdsp_diseqc_data = ":RDSP:DISEQC_DATA \r\n"
 
 command_rdsp_press_key1 = ":RDSP:PRESS_KEY1 \r\n"

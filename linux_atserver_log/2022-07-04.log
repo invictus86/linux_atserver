@@ -285,3 +285,4 @@
 2022-07-05 09:36:29,990 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':RDS:RF_OFF \r\n'
 2022-07-05 09:36:30,990 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':RDS:RF_ON \r\n'
 2022-07-05 09:36:31,992 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ''
+2022-07-05 09:54:49,401 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:67] - INFO: ('192.168.1.41', 61859) connected

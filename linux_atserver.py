@@ -10,6 +10,7 @@ from ekt_streamxpress_lib import StreamXpress
 from ekt_rds_lib import *
 import logging
 import shutil
+import re
 
 # logging.basicConfig(level=logging.NOTSET)
 # log = logging.getLogger("Linux_ATServer")
@@ -416,6 +417,10 @@ class Linux_ATServer():
                     rdsp.send_rec_serial(cmd_key_5_up)
                     conn.send("{}SUCCESS".format(data[:14]))
 
+                elif data == ":RDSP:ALL_KEY_UP \r\n":
+                    rdsp.send_rec_serial(cmd_key_all_up)
+                    conn.send("{}SUCCESS".format(data[:17]))
+
                 elif data == ":RDSP:KEY1_DOWN \r\n":
                     rdsp.send_rec_serial(cmd_key_1_down)
                     conn.send("{}SUCCESS".format(data[:16]))
@@ -451,6 +456,33 @@ class Linux_ATServer():
                 elif data == ":RDS:RF_OFF \r\n":
                     rdsp.send_rec_serial(cmd_rf_disconnect)
                     conn.send("{}SUCCESS".format(data[:12]))
+
+                elif data == ':RDSP:STB_HW_DATA\r\n':
+                    index_data = str(binascii.hexlify(":RDSP:STB_HW_DATA"))
+                    print index_data
+                    res = rdsp.send_rec_serial(cmd_get_all_status)
+                    print res
+                    print res[10:]
+                    # send_data = index_data + res[16:]
+                    # print send_data
+                    # send_data = send_data.upper()
+                    # text_list = re.findall(".{2}", send_data)
+                    # hex_text = " ".join(text_list)
+                    # # print(hex_text)
+                    # str_text = bytearray.fromhex(hex_text)
+                    # conn.send(str_text)
+
+                elif data == ':RDSP:MCU_INFO\r\n':
+                    index_data = str(binascii.hexlify(":RDSP:MCU_INFO"))
+                    res = rdsp.send_rec_serial(cmd_get_mcu_info)
+                    send_data = index_data + res[16:66]
+                    # print send_data
+                    send_data = send_data.upper()
+                    text_list = re.findall(".{2}", send_data)
+                    hex_text = " ".join(text_list)
+                    # print(hex_text)
+                    str_text = bytearray.fromhex(hex_text)
+                    conn.send(str_text)
 
 
 
