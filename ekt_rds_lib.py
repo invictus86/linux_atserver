@@ -51,7 +51,8 @@ class Ekt_Rdsp():
         self.com.write(hex_cmd)
 
         # Stop and wait for the data
-        time.sleep(1)
+        # time.sleep(1)
+        time.sleep(0.5)
         count = self.com.inWaiting()
         # print count
         rec_data = b''

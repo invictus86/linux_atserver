@@ -32,7 +32,7 @@ logging.basicConfig(level=logging.INFO,  # 控制台打印的日志级别
                     # a是追加模式,默认如果不写的话,就是追加模式
                     format='%(asctime)s - %(pathname)s[line:%(lineno)d] - %(levelname)s: %(message)s')  # 日志格式
 
-wsdl_path = r"E:\ivan_code\linux_atserver\SpRc.wsdl"
+wsdl_path = r"./SpRc.wsdl"
 com_name = 'COM4'
 baud_rate = 115200
 timeout = 5
@@ -357,18 +357,100 @@ class Linux_ATServer():
                         conn.send("send data format err, data    {}".format(data))
 
                 elif data == ":RDS:POWER_ON \r\n":
-                    rdsp.send_rec_serial(cmd_power_off)
+                    rdsp.send_rec_serial(cmd_power_on)
                     conn.send("{}SUCCESS".format(data[:14]))
 
-                    # rec_data = streamxpress.set_dvbt_constellation_type_64qam()
-                    # logging.info("streamxpress receive data   " + repr(rec_data))
-                    # if rec_data.get("result") is True:
-                    #     conn.send("{}SUCCESS".format(data[:23]))
-                    # else:
-                    #     conn.send("send data format err, data    {}".format(data))
-                    #     continue
+                elif data == ":RDS:POWER_OFF \r\n":
+                    rdsp.send_rec_serial(cmd_power_off)
+                    conn.send("{}SUCCESS".format(data[:15]))
 
+                elif data == ":RDS:USB_PC \r\n":
+                    rdsp.send_rec_serial(cmd_usb_pc)
+                    conn.send("{}SUCCESS".format(data[:12]))
 
+                elif data == ":RDS:USB_STB \r\n":
+                    rdsp.send_rec_serial(cmd_usb_stb)
+                    conn.send("{}SUCCESS".format(data[:13]))
+
+                elif data == ":RDS:USB_NONE \r\n":
+                    rdsp.send_rec_serial(cmd_usb_none)
+                    conn.send("{}SUCCESS".format(data[:14]))
+
+                elif data == ":RDSP:PRESS_KEY1 \r\n":
+                    rdsp.send_rec_serial(cmd_click_key_1)
+                    conn.send("{}SUCCESS".format(data[:17]))
+
+                elif data == ":RDSP:PRESS_KEY2 \r\n":
+                    rdsp.send_rec_serial(cmd_click_key_2)
+                    conn.send("{}SUCCESS".format(data[:17]))
+
+                elif data == ":RDSP:PRESS_KEY3 \r\n":
+                    rdsp.send_rec_serial(cmd_click_key_3)
+                    conn.send("{}SUCCESS".format(data[:17]))
+
+                elif data == ":RDSP:PRESS_KEY4 \r\n":
+                    rdsp.send_rec_serial(cmd_click_key_4)
+                    conn.send("{}SUCCESS".format(data[:17]))
+
+                elif data == ":RDSP:PRESS_KEY5 \r\n":
+                    rdsp.send_rec_serial(cmd_click_key_5)
+                    conn.send("{}SUCCESS".format(data[:17]))
+
+                elif data == ":RDSP:KEY1_UP \r\n":
+                    rdsp.send_rec_serial(cmd_key_1_up)
+                    conn.send("{}SUCCESS".format(data[:14]))
+
+                elif data == ":RDSP:KEY2_UP \r\n":
+                    rdsp.send_rec_serial(cmd_key_2_up)
+                    conn.send("{}SUCCESS".format(data[:14]))
+
+                elif data == ":RDSP:KEY3_UP \r\n":
+                    rdsp.send_rec_serial(cmd_key_3_up)
+                    conn.send("{}SUCCESS".format(data[:14]))
+
+                elif data == ":RDSP:KEY4_UP \r\n":
+                    rdsp.send_rec_serial(cmd_key_4_up)
+                    conn.send("{}SUCCESS".format(data[:14]))
+
+                elif data == ":RDSP:KEY5_UP \r\n":
+                    rdsp.send_rec_serial(cmd_key_5_up)
+                    conn.send("{}SUCCESS".format(data[:14]))
+
+                elif data == ":RDSP:KEY1_DOWN \r\n":
+                    rdsp.send_rec_serial(cmd_key_1_down)
+                    conn.send("{}SUCCESS".format(data[:16]))
+
+                elif data == ":RDSP:KEY2_DOWN \r\n":
+                    rdsp.send_rec_serial(cmd_key_2_down)
+                    conn.send("{}SUCCESS".format(data[:16]))
+
+                elif data == ":RDSP:KEY3_DOWN \r\n":
+                    rdsp.send_rec_serial(cmd_key_3_down)
+                    conn.send("{}SUCCESS".format(data[:16]))
+
+                elif data == ":RDSP:KEY4_DOWN \r\n":
+                    rdsp.send_rec_serial(cmd_key_4_down)
+                    conn.send("{}SUCCESS".format(data[:16]))
+
+                elif data == ":RDSP:KEY5_DOWN \r\n":
+                    rdsp.send_rec_serial(cmd_key_5_down)
+                    conn.send("{}SUCCESS".format(data[:16]))
+
+                elif data == ":RDSP:RJ45_ON \r\n":
+                    rdsp.send_rec_serial(cmd_ethernet_connect)
+                    conn.send("{}SUCCESS".format(data[:14]))
+
+                elif data == ":RDSP:RJ45_OFF \r\n":
+                    rdsp.send_rec_serial(cmd_ethernet_disconnect)
+                    conn.send("{}SUCCESS".format(data[:15]))
+
+                elif data == ":RDS:RF_ON \r\n":
+                    rdsp.send_rec_serial(cmd_rf_connect)
+                    conn.send("{}SUCCESS".format(data[:11]))
+
+                elif data == ":RDS:RF_OFF \r\n":
+                    rdsp.send_rec_serial(cmd_rf_disconnect)
+                    conn.send("{}SUCCESS".format(data[:12]))
 
 
 

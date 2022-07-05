@@ -120,3 +120,168 @@
 2022-07-04 16:36:04,292 - E:/ivan_code/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':DTA:SET_DVBT_CON_TYPE 64-QAM\r\n'
 2022-07-04 16:36:04,369 - E:/ivan_code/linux_atserver/linux_atserver.py[line:374] - INFO: streamxpress receive data   {'rec_data': 0, 'result': True}
 2022-07-04 16:36:04,371 - E:/ivan_code/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ''
+2022-07-04 17:26:27,374 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:67] - INFO: ('192.168.1.41', 52814) connected
+2022-07-04 17:26:27,374 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':RDS:USB_NONE \r\n'
+2022-07-04 17:28:39,782 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:67] - INFO: ('192.168.1.41', 52834) connected
+2022-07-04 17:28:39,782 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':RDS:USB_NONE \r\n'
+2022-07-04 17:28:42,782 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':RDS:POWER_ON \r\n'
+2022-07-04 17:28:43,783 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ''
+2022-07-04 17:29:22,996 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:67] - INFO: ('192.168.1.41', 52842) connected
+2022-07-04 17:29:22,996 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':RDS:USB_NONE \r\n'
+2022-07-04 17:29:25,496 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':RDS:POWER_ON \r\n'
+2022-07-04 17:29:25,999 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ''
+2022-07-04 17:29:57,756 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:67] - INFO: ('192.168.1.41', 52849) connected
+2022-07-04 17:29:57,756 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':RDS:USB_NONE \r\n'
+2022-07-04 17:29:59,858 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':RDS:POWER_ON \r\n'
+2022-07-04 17:29:59,960 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ''
+2022-07-04 17:33:44,842 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:67] - INFO: ('192.168.1.41', 52930) connected
+2022-07-04 17:33:44,842 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':RDS:USB_NONE \r\n'
+2022-07-04 17:33:44,944 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':RDS:POWER_ON \r\n'
+2022-07-04 17:33:45,045 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ''
+2022-07-04 17:33:55,888 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:67] - INFO: ('192.168.1.41', 52934) connected
+2022-07-04 17:33:55,888 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':RDS:POWER_ON \r\n'
+2022-07-04 17:33:56,391 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ''
+2022-07-04 17:35:21,792 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:67] - INFO: ('192.168.1.41', 52954) connected
+2022-07-04 17:35:21,792 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':RDS:POWER_ON \r\n'
+2022-07-04 17:35:22,292 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ''
+2022-07-04 17:35:38,187 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:67] - INFO: ('192.168.1.41', 52959) connected
+2022-07-04 17:35:38,187 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':RDS:POWER_OFF \r\n'
+2022-07-04 17:36:24,118 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:67] - INFO: ('192.168.1.41', 52964) connected
+2022-07-04 17:36:24,118 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':RDS:POWER_OFF \r\n'
+2022-07-04 17:36:24,618 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ''
+2022-07-04 17:36:40,918 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:67] - INFO: ('192.168.1.41', 52965) connected
+2022-07-04 17:36:40,918 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':RDS:POWER_ON \r\n'
+2022-07-04 17:36:41,420 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ''
+2022-07-04 17:36:46,596 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:67] - INFO: ('192.168.1.41', 52966) connected
+2022-07-04 17:36:46,596 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':RDS:POWER_OFF \r\n'
+2022-07-04 17:36:47,098 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ''
+2022-07-04 17:38:26,177 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:67] - INFO: ('192.168.1.41', 52988) connected
+2022-07-04 17:38:26,177 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':RDS:USB_PC \r\n'
+2022-07-04 17:38:26,678 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ''
+2022-07-04 17:41:48,951 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:67] - INFO: ('192.168.1.41', 58754) connected
+2022-07-04 17:41:48,953 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':RDS:USB_PC \r\n'
+2022-07-04 17:41:49,453 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ''
+2022-07-04 17:41:55,171 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:67] - INFO: ('192.168.1.41', 58755) connected
+2022-07-04 17:41:55,171 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':RDS:USB_STB \r\n'
+2022-07-04 17:41:55,671 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ''
+2022-07-04 17:42:09,934 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:67] - INFO: ('192.168.1.41', 58756) connected
+2022-07-04 17:42:09,934 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':RDS:USB_NONE \r\n'
+2022-07-04 17:42:10,440 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ''
+2022-07-04 17:47:03,892 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:67] - INFO: ('192.168.1.41', 58806) connected
+2022-07-04 17:47:03,894 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':RDS:USB_NONE \r\n'
+2022-07-04 17:47:06,394 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':RDSP:PRESS_KEY1 \r\n'
+2022-07-04 17:47:06,898 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ''
+2022-07-04 17:47:56,269 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:67] - INFO: ('192.168.1.41', 58820) connected
+2022-07-04 17:47:56,269 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':RDSP:PRESS_KEY1 \r\n'
+2022-07-04 17:47:56,773 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ''
+2022-07-04 17:49:16,404 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:67] - INFO: ('192.168.1.41', 59087) connected
+2022-07-04 17:49:16,404 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':RDSP:PRESS_KEY1 \r\n'
+2022-07-04 17:49:16,905 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ''
+2022-07-04 17:50:33,151 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:67] - INFO: ('192.168.1.41', 60249) connected
+2022-07-04 17:50:33,153 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':RDSP:PRESS_KEY1 \r\n'
+2022-07-04 17:50:35,653 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':RDSP:PRESS_KEY2 \r\n'
+2022-07-04 17:50:45,552 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:67] - INFO: ('192.168.1.41', 60254) connected
+2022-07-04 17:50:45,552 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':RDSP:PRESS_KEY1 \r\n'
+2022-07-04 17:50:48,053 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':RDSP:PRESS_KEY2 \r\n'
+2022-07-04 17:50:50,555 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':RDSP:PRESS_KEY3 \r\n'
+2022-07-04 17:50:53,055 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':RDSP:PRESS_KEY4 \r\n'
+2022-07-04 17:50:55,558 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':RDSP:PRESS_KEY5 \r\n'
+2022-07-04 17:50:56,062 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ''
+2022-07-04 17:52:06,691 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:67] - INFO: ('192.168.1.41', 60289) connected
+2022-07-04 17:52:06,691 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':RDSP:PRESS_KEY1 \r\n'
+2022-07-04 17:52:09,193 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':RDSP:PRESS_KEY2 \r\n'
+2022-07-04 17:52:11,694 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':RDSP:PRESS_KEY3 \r\n'
+2022-07-04 17:52:14,194 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':RDSP:PRESS_KEY4 \r\n'
+2022-07-04 17:52:16,696 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':RDSP:PRESS_KEY5 \r\n'
+2022-07-04 17:52:17,203 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ''
+2022-07-04 17:56:00,188 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:67] - INFO: ('192.168.1.41', 60351) connected
+2022-07-04 17:56:00,190 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':RDSP:KEY1_UP \r\n'
+2022-07-04 17:56:00,691 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ''
+2022-07-04 17:57:48,785 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:67] - INFO: ('192.168.1.41', 60359) connected
+2022-07-04 17:57:48,785 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':RDSP:KEY1_UP \r\n'
+2022-07-04 17:57:49,286 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':RDSP:KEY2_UP \r\n'
+2022-07-04 17:57:55,588 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:67] - INFO: ('192.168.1.41', 60363) connected
+2022-07-04 17:57:55,588 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':RDSP:KEY1_UP \r\n'
+2022-07-04 17:57:56,088 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':RDSP:KEY2_UP \r\n'
+2022-07-04 17:57:56,589 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':RDSP:KEY3_UP \r\n'
+2022-07-04 17:57:57,091 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':RDSP:KEY4_UP \r\n'
+2022-07-04 17:57:57,592 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':RDSP:KEY5_UP\r\n'
+2022-07-04 18:09:18,102 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:67] - INFO: ('192.168.1.41', 60556) connected
+2022-07-04 18:09:18,104 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':RDSP:KEY1_DOWN \r\n'
+2022-07-04 18:09:18,608 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ''
+2022-07-04 18:09:56,711 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:67] - INFO: ('192.168.1.41', 60564) connected
+2022-07-04 18:09:56,711 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':RDSP:KEY1_DOWN \r\n'
+2022-07-04 18:09:57,213 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':RDSP:KEY2_DOWN \r\n'
+2022-07-04 18:09:57,714 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':RDSP:KEY3_DOWN \r\n'
+2022-07-04 18:09:58,217 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':RDSP:KEY4_DOWN \r\n'
+2022-07-04 18:09:58,719 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':RDSP:KEY5_DOWN\r\n'
+2022-07-04 18:10:59,342 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:67] - INFO: ('192.168.1.41', 60567) connected
+2022-07-04 18:10:59,342 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':RDSP:KEY5_DOWN\r\n'
+2022-07-04 18:11:24,302 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:67] - INFO: ('192.168.1.41', 60571) connected
+2022-07-04 18:11:24,302 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':RDSP:KEY1_UP \r\n'
+2022-07-04 18:11:24,802 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':RDSP:KEY2_UP \r\n'
+2022-07-04 18:11:25,303 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':RDSP:KEY3_UP \r\n'
+2022-07-04 18:11:25,805 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':RDSP:KEY4_UP \r\n'
+2022-07-04 18:11:26,305 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':RDSP:KEY5_UP \r\n'
+2022-07-04 18:11:26,808 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ''
+2022-07-04 18:12:45,631 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:67] - INFO: ('192.168.1.41', 60587) connected
+2022-07-04 18:12:45,631 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':RDSP:KEY5_DOWN\r\n'
+2022-07-04 18:13:13,104 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:67] - INFO: ('192.168.1.41', 60591) connected
+2022-07-04 18:13:13,104 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':RDSP:KEY5_DOWN\r\n'
+2022-07-04 18:14:46,177 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:67] - INFO: ('192.168.1.41', 60630) connected
+2022-07-04 18:14:46,177 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':RDSP:KEY5_DOWN\r\n'
+2022-07-04 18:15:10,322 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:67] - INFO: ('192.168.1.41', 60653) connected
+2022-07-04 18:15:10,322 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':RDSP:KEY5_DOWN\r\n'
+2022-07-04 18:15:58,137 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:67] - INFO: ('192.168.1.41', 60659) connected
+2022-07-04 18:15:58,137 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':RDSP:KEY5_DOWN \r\n'
+2022-07-04 18:15:58,638 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ''
+2022-07-04 18:30:34,779 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:67] - INFO: ('192.168.1.41', 60911) connected
+2022-07-04 18:30:34,780 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':RDSP:KEY1_UP \r\n'
+2022-07-04 18:30:35,282 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':RDSP:KEY2_UP \r\n'
+2022-07-04 18:30:35,782 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':RDSP:KEY3_UP \r\n'
+2022-07-04 18:30:36,285 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':RDSP:KEY4_UP \r\n'
+2022-07-04 18:30:36,786 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':RDSP:KEY5_UP \r\n'
+2022-07-04 18:30:37,292 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ''
+2022-07-04 18:30:47,244 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:67] - INFO: ('192.168.1.41', 60913) connected
+2022-07-04 18:30:47,244 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':RDSP:KEY1_DOWN \r\n'
+2022-07-04 18:30:47,746 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':RDSP:KEY2_DOWN \r\n'
+2022-07-04 18:30:48,246 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':RDSP:KEY3_DOWN \r\n'
+2022-07-04 18:30:48,747 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':RDSP:KEY4_DOWN \r\n'
+2022-07-04 18:30:49,249 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':RDSP:KEY5_DOWN \r\n'
+2022-07-04 18:30:54,750 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':RDSP:KEY1_UP \r\n'
+2022-07-04 18:30:55,252 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':RDSP:KEY2_UP \r\n'
+2022-07-04 18:30:55,753 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':RDSP:KEY3_UP \r\n'
+2022-07-04 18:30:56,253 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':RDSP:KEY4_UP \r\n'
+2022-07-04 18:30:56,756 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':RDSP:KEY5_UP \r\n'
+2022-07-04 18:30:57,257 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ''
+2022-07-04 18:34:28,828 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:67] - INFO: ('192.168.1.41', 60944) connected
+2022-07-04 18:34:28,828 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':RDSP:RJ45_ON \r\n'
+2022-07-04 18:34:29,336 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ''
+2022-07-04 18:35:33,293 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:67] - INFO: ('192.168.1.41', 60992) connected
+2022-07-04 18:35:33,293 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':RDSP:RJ45_OFF \r\n'
+2022-07-04 18:35:33,796 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ''
+2022-07-04 18:35:50,153 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:67] - INFO: ('192.168.1.41', 60995) connected
+2022-07-04 18:35:50,153 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':RDSP:RJ45_ON \r\n'
+2022-07-04 18:35:52,654 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':RDSP:RJ45_OFF \r\n'
+2022-07-04 18:35:53,158 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ''
+2022-07-04 18:36:00,150 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:67] - INFO: ('192.168.1.41', 60996) connected
+2022-07-04 18:36:00,151 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':RDSP:RJ45_ON \r\n'
+2022-07-04 18:36:02,651 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':RDSP:RJ45_OFF \r\n'
+2022-07-04 18:36:03,154 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ''
+2022-07-04 18:36:29,279 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:67] - INFO: ('192.168.1.41', 61024) connected
+2022-07-04 18:36:29,279 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':RDSP:RJ45_ON \r\n'
+2022-07-04 18:36:31,779 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':RDSP:RJ45_OFF \r\n'
+2022-07-04 18:36:32,282 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ''
+2022-07-04 18:39:08,585 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:67] - INFO: ('192.168.1.41', 56498) connected
+2022-07-04 18:39:08,585 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':RDS:RF_OFF \r\n'
+2022-07-04 18:39:30,868 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:67] - INFO: ('192.168.1.41', 56504) connected
+2022-07-04 18:39:30,868 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':RDS:RF_OFF \r\n'
+2022-07-04 18:39:31,871 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ''
+2022-07-04 18:39:47,061 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:67] - INFO: ('192.168.1.41', 56507) connected
+2022-07-04 18:39:47,061 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':RDS:RF_OFF \r\n'
+2022-07-04 18:39:48,061 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':RDS:RF_ON \r\n'
+2022-07-04 18:39:49,062 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ''
+2022-07-05 09:36:29,990 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:67] - INFO: ('192.168.1.41', 57765) connected
+2022-07-05 09:36:29,990 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':RDS:RF_OFF \r\n'
+2022-07-05 09:36:30,990 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ':RDS:RF_ON \r\n'
+2022-07-05 09:36:31,992 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:73] - INFO: receive data   ''
