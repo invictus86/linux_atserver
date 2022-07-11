@@ -459,18 +459,16 @@ class Linux_ATServer():
 
                 elif data == ':RDSP:STB_HW_DATA\r\n':
                     index_data = str(binascii.hexlify(":RDSP:STB_HW_DATA"))
-                    print index_data
+                    # print index_data
                     res = rdsp.send_rec_serial(cmd_get_all_status)
-                    print res
-                    print res[10:]
-                    # send_data = index_data + res[16:]
+                    send_data = index_data + res[12:76]
                     # print send_data
-                    # send_data = send_data.upper()
-                    # text_list = re.findall(".{2}", send_data)
-                    # hex_text = " ".join(text_list)
-                    # # print(hex_text)
-                    # str_text = bytearray.fromhex(hex_text)
-                    # conn.send(str_text)
+                    send_data = send_data.upper()
+                    text_list = re.findall(".{2}", send_data)
+                    hex_text = " ".join(text_list)
+                    # print(hex_text)
+                    str_text = bytearray.fromhex(hex_text)
+                    conn.send(str_text)
 
                 elif data == ':RDSP:MCU_INFO\r\n':
                     index_data = str(binascii.hexlify(":RDSP:MCU_INFO"))
@@ -483,6 +481,23 @@ class Linux_ATServer():
                     # print(hex_text)
                     str_text = bytearray.fromhex(hex_text)
                     conn.send(str_text)
+
+                elif data == ':RDSP:DISEQC_DATA\r\n':
+                    index_data = str(binascii.hexlify(":RDSP:DISEQC_DATA"))
+                    print index_data
+                    # res = rdsp.send_rec_serial_diseqc(cmd_get_diseqc_data)
+                    # print res
+                    # print res[10:]
+
+
+                    # send_data = index_data + res[16:66]
+                    # # print send_data
+                    # send_data = send_data.upper()
+                    # text_list = re.findall(".{2}", send_data)
+                    # hex_text = " ".join(text_list)
+                    # # print(hex_text)
+                    # str_text = bytearray.fromhex(hex_text)
+                    # conn.send(str_text)
 
 
 

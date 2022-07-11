@@ -37,6 +37,7 @@ cmd_ethernet_connect = '81 82 00 04 00 00 02 20 00 00 00 00 83 84'  # ethernet_c
 
 cmd_get_all_status = '81 82 00 04 00 00 01 04 00 00 00 00 83 84'  # get_all_status
 cmd_get_mcu_info = '81 82 00 04 00 00 00 00 00 00 00 00 83 84'  # get_all_status
+cmd_get_diseqc_data = '81 82 00 04 00 00 01 01 00 00 00 00 83 84'  # get_all_status
 
 
 class Ekt_Rdsp():
@@ -70,6 +71,34 @@ class Ekt_Rdsp():
         self.com.flushInput()  # 清除缓存区数据。当代码在循环中执行时，不加这句代码会造成count累加
         return rec_data
 
+    def send_rec_serial_diseqc(self, input_cmd):
+        # hex_cmd = bytes.fromhex(input_cmd)    # python3
+        hex_cmd = bytearray.fromhex(input_cmd)  # python2
+        # print(hex_cmd)
+
+        self.com.write(hex_cmd)
+
+        start_time = time.time()
+        while True:
+            # Stop and wait for the data
+            time.sleep(0.5)
+            count = self.com.inWaiting()
+            rec_data = self.com.read(count)
+            if count == 0:
+                continue
+            else:
+                rec_data = str(binascii.b2a_hex(rec_data))
+                # print rec_data
+                if rec_data[-4:] == b"8384" and rec_data[:4] == b"8182":
+                    # print "*"*50
+                    # print rec_data
+                    break
+            # timeout 300s
+            if time.time() - start_time > 300:
+                break
+        self.com.flushInput()  # 清除缓存区数据。当代码在循环中执行时，不加这句代码会造成count累加
+        return rec_data
+
     def __del__(self):
         # 关闭串口
         self.com.close()
@@ -79,6 +108,9 @@ if __name__ == '__main__':
     # com = serial.Serial('COM4', 115200, timeout=5)
     rdsp = Ekt_Rdsp('COM4', 115200, timeout=5)
     # rdsp.send_rec_serial(cmd_power_off)
-    res_data = rdsp.send_rec_serial(cmd_get_all_status)
+    res_data = rdsp.send_rec_serial_diseqc(cmd_get_diseqc_data)
+    print res_data
+    # print res_data[12:]
+
     # print type(res_data)
     # print len(res_data)
