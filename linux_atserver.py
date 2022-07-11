@@ -484,10 +484,16 @@ class Linux_ATServer():
 
                 elif data == ':RDSP:DISEQC_DATA\r\n':
                     index_data = str(binascii.hexlify(":RDSP:DISEQC_DATA"))
+                    res = rdsp.send_rec_serial_diseqc(cmd_get_diseqc_data)
+                    print res
+
+                    unpack_data = deal_diseqc_data(res)
+                    print res
+                    print res[12:]
+                    print unpack_data
                     print index_data
-                    # res = rdsp.send_rec_serial_diseqc(cmd_get_diseqc_data)
-                    # print res
-                    # print res[10:]
+                    str_text = bytearray.fromhex(index_data + unpack_data)
+                    conn.send(str_text)
 
 
                     # send_data = index_data + res[16:66]

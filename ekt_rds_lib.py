@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 import serial
 import binascii, time
+from utils import deal_diseqc_data
 
 cmd_power_off = '81 82 00 04 00 00 02 00 50 00 00 00 83 84'  # power off
 cmd_power_on = '81 82 00 04 00 00 02 00 60 00 00 00 83 84'  # power on
@@ -110,6 +111,12 @@ if __name__ == '__main__':
     # rdsp.send_rec_serial(cmd_power_off)
     res_data = rdsp.send_rec_serial_diseqc(cmd_get_diseqc_data)
     print res_data
+
+    unpack_data = deal_diseqc_data(res_data)
+    print res_data
+    print res_data[12:]
+    print unpack_data
+
     # print res_data[12:]
 
     # print type(res_data)
