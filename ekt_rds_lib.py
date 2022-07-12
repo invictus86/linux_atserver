@@ -41,7 +41,7 @@ cmd_get_mcu_info = '81 82 00 04 00 00 00 00 00 00 00 00 83 84'  # get_all_status
 cmd_get_diseqc_data = '81 82 00 04 00 00 01 01 00 00 00 00 83 84'  # get_all_status
 
 
-class Ekt_Rdsp():
+class EktRdsp():
     def __init__(self, com_name, baud_rate, timeout):
         com = serial.Serial(com_name, baud_rate, timeout=timeout)
         self.com = com
@@ -107,7 +107,7 @@ class Ekt_Rdsp():
 
 if __name__ == '__main__':
     # com = serial.Serial('COM4', 115200, timeout=5)
-    rdsp = Ekt_Rdsp('COM4', 115200, timeout=5)
+    rdsp = EktRdsp('COM4', 115200, timeout=5)
     # rdsp.send_rec_serial(cmd_power_off)
     res_data = rdsp.send_rec_serial_diseqc(cmd_get_diseqc_data)
     print res_data

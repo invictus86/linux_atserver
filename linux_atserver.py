@@ -8,6 +8,7 @@ import socket
 import threading
 from ekt_streamxpress_lib import StreamXpress
 from ekt_rds_lib import *
+from read_atserver_ini import GetATserverIni
 import logging
 import shutil
 import re
@@ -39,7 +40,7 @@ baud_rate = 115200
 timeout = 5
 
 streamxpress = StreamXpress(wsdl_path)
-rdsp = Ekt_Rdsp(com_name, baud_rate, timeout=timeout)
+rdsp = EktRdsp(com_name, baud_rate, timeout=timeout)
 
 ip = "192.168.1.41"
 port = 8900
@@ -495,15 +496,12 @@ class Linux_ATServer():
                     str_text = bytearray.fromhex(index_data + unpack_data)
                     conn.send(str_text)
 
+                elif data == ":DOC:CONFIG \r\n":
+                    path = r'./ATServer.ini'
+                    atserver_ini = GetATserverIni(path)
+                    all_config = atserver_ini.get_all_config()
+                    conn.send("{}SUCCESS {}".format(data[:12], all_config))
 
-                    # send_data = index_data + res[16:66]
-                    # # print send_data
-                    # send_data = send_data.upper()
-                    # text_list = re.findall(".{2}", send_data)
-                    # hex_text = " ".join(text_list)
-                    # # print(hex_text)
-                    # str_text = bytearray.fromhex(hex_text)
-                    # conn.send(str_text)
 
 
 

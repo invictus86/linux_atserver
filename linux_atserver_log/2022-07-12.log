@@ -1,0 +1,6 @@
+2022-07-12 09:52:53,651 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:69] - INFO: ('192.168.1.41', 64337) connected
+2022-07-12 09:52:53,651 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:75] - INFO: receive data   ':DOC:CONFIG \r\n'
+2022-07-12 09:52:53,654 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:75] - INFO: receive data   ''
+2022-07-12 09:56:02,663 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:69] - INFO: ('192.168.1.41', 64358) connected
+2022-07-12 09:56:02,663 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:75] - INFO: receive data   ':DOC:CONFIG \r\n'
+2022-07-12 09:56:02,665 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:75] - INFO: receive data   ''

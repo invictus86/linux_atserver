@@ -2,50 +2,61 @@
 # -*- coding: utf-8 -*-
 import configparser
 
-config = configparser.ConfigParser()
-path = r'D:\Loren_projects\DCA4715pATX_test_package\ATServer.ini'
-config.read(path)
+
+class GetATserverIni():
+    def __init__(self, path):
+        self.config = configparser.ConfigParser()
+        self.config.read(path)
+
+    def get_config_data(self, section, item):
+        try:
+            value = self.config.get(section, item)
+        except:
+            value = ""
+        return value
+
+    def get_all_config(self):
+        CD5PATH = self.get_config_data("V5LOADER", "CD5_PATH")
+        TSPATH = self.get_config_data("V5LOADER", "TS_PATH")
+        USBPATH = self.get_config_data("V5LOADER", "USB_PATH")
+        LOADFILE = self.get_config_data("V5LOADER", "LOAD_FILE")
+        CLEANFILE = self.get_config_data("V5LOADER", "CLEAN_FILE")
+        PID = self.get_config_data("V5LOADER", "PID")
+
+        OTATYPE = self.get_config_data("OTA", "TYPE")
+        OTAFREQ = self.get_config_data("OTA", "FREQ")
+        OTASYMBOLRATE = self.get_config_data("OTA", "SYMBOL_RATE")
+        OTAANNEX = self.get_config_data("OTA", "ANNEX")
+        OTACODERATE = self.get_config_data("OTA", "CODE_RATE")
+        OTABANDWIDTH = self.get_config_data("OTA", "BANDWIDTH")
+
+        OTHER_PARAM_1 = self.get_config_data("OTHER", "PARAM_1")
+        OTHER_PARAM_2 = self.get_config_data("OTHER", "PARAM_1")
+        OTHER_PARAM_3 = self.get_config_data("OTHER", "PARAM_1")
+
+        # print CD5PATH
+        # print TSPATH
+        # print USBPATH
+        # print LOADFILE
+        # print CLEANFILE
+        # print PID
+        # print OTATYPE
+        # print OTAFREQ
+        # print OTASYMBOLRATE
+        # print OTAANNEX
+        # print OTACODERATE
+        # print OTABANDWIDTH
+        # print OTHER_PARAM_1
+        # print OTHER_PARAM_2
+        # print OTHER_PARAM_3
+        all_config = r"#CD5PATH={}#TSPATH={}#USBPATH={}#LOADFILE={}#CLEANFILE={}#PID={}#OTATYPE={}#OTAFREQ={}#OTASYMBOLRATE={}#OTAANNEX={}#OTACODERATE={}#OTABANDWIDTH={}#OTHER_PARAM_1={}#OTHER_PARAM_2={}#OTHER_PARAM_3={}".format(
+            CD5PATH, TSPATH, USBPATH, LOADFILE, CLEANFILE, PID, OTATYPE, OTAFREQ, OTASYMBOLRATE, OTAANNEX, OTACODERATE,
+            OTABANDWIDTH, OTHER_PARAM_1, OTHER_PARAM_2, OTHER_PARAM_3)
+        return all_config
 
 
-def get_config_data(section, item):
-    try:
-        value = config.get(section, item)
-    except:
-        value = ""
-    return value
-
-
-CD5PATH = get_config_data("V5LOADER", "CD5_PATH")
-TSPATH = get_config_data("V5LOADER", "TS_PATH")
-USBPATH = get_config_data("V5LOADER", "USB_PATH")
-LOADFILE = get_config_data("V5LOADER", "LOAD_FILE")
-CLEANFILE = get_config_data("V5LOADER", "CLEAN_FILE")
-PID = get_config_data("V5LOADER", "PID")
-
-OTATYPE = get_config_data("OTA", "TYPE")
-OTAFREQ = get_config_data("OTA", "FREQ")
-OTASYMBOLRATE = get_config_data("OTA", "SYMBOL_RATE")
-OTAANNEX = get_config_data("OTA", "ANNEX")
-OTACODERATE = get_config_data("OTA", "CODE_RATE")
-OTABANDWIDTH = get_config_data("OTA", "BANDWIDTH")
-
-OTHER_PARAM_1 = get_config_data("OTHER", "PARAM_1")
-OTHER_PARAM_2 = get_config_data("OTHER", "PARAM_1")
-OTHER_PARAM_3 = get_config_data("OTHER", "PARAM_1")
-
-print CD5PATH
-print TSPATH
-print USBPATH
-print LOADFILE
-print CLEANFILE
-print PID
-print OTATYPE
-print OTAFREQ
-print OTASYMBOLRATE
-print OTAANNEX
-print OTACODERATE
-print OTABANDWIDTH
-
-print OTHER_PARAM_1
-print OTHER_PARAM_2
-print OTHER_PARAM_3
+if __name__ == '__main__':
+    path = r'D:\Loren_projects\DCA4715pATX_test_package\ATServer.ini'
+    atserver_ini = GetATserverIni(path)
+    all_config = atserver_ini.get_all_config()
+    print all_config
