@@ -4,10 +4,13 @@ from zeep import Client
 
 class StreamXpress(object):
     """
-
+    streamxpress
     """
-
     def __init__(self, wsdl_path):
+        """
+        init
+        :param wsdl_path: wsdl path
+        """
         client = Client(wsdl_path)
         self.client = client
         self.client.service.OpenSession()

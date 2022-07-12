@@ -4,11 +4,25 @@ import configparser
 
 
 class EktFile():
+    """
+    get ATServer.ini data
+    """
+
     def __init__(self, path):
+        """
+        init
+        :param path: ATServer.ini path
+        """
         self.config = configparser.ConfigParser()
         self.config.read(path)
 
     def get_config_data(self, section, item):
+        """
+        get config data
+        :param section:section name,example  V5LOADER、OTA、OTHER
+        :param item: item name
+        :return: item value
+        """
         try:
             value = self.config.get(section, item)
         except:
@@ -16,6 +30,10 @@ class EktFile():
         return value
 
     def get_all_config(self):
+        """
+        get all config
+        :return: all config data
+        """
         CD5PATH = self.get_config_data("V5LOADER", "CD5_PATH")
         TSPATH = self.get_config_data("V5LOADER", "TS_PATH")
         USBPATH = self.get_config_data("V5LOADER", "USB_PATH")

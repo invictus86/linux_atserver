@@ -1,3 +1,6 @@
+"""
+just command sample
+"""
 # streamxpress
 command_dta_type = ":DTA:TYPE {} {}\r\n"
 command_dta_freq = ":DTA:FREQ {}\r\n"

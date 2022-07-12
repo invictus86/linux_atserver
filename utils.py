@@ -3,7 +3,13 @@
 import shutil
 import os
 
+
 def deal_diseqc_data(str_data):
+    """
+    deal diseqc data
+    :param str_data:serial diseqc data
+    :return:unpack diseqc data
+    """
     load_h = str_data[4:6]
     load_l = str_data[6:8]
     extra_byte_h = str_data[8:10]
@@ -103,6 +109,7 @@ def del_all_file(filepath):
         elif os.path.isdir(file_path):
             shutil.rmtree(file_path)
 
+
 if __name__ == '__main__':
     str_data = "818200140003030102020400000000000000601039700000000000200200008384"
 
@@ -110,12 +117,11 @@ if __name__ == '__main__':
     print str_data
     print str_data[12:]
     print unpack_data
-# print load_h
-# print load_l
-# print extra_byte_h
-# print extra_byte_l
+    # print load_h
+    # print load_l
+    # print extra_byte_h
+    # print extra_byte_l
 
-
-# print str_data[12:]
-# print str_data[12:-8]
-# print str_data[12:-8]
+    # print str_data[12:]
+    # print str_data[12:-8]
+    # print str_data[12:-8]

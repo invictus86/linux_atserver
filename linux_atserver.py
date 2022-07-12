@@ -61,10 +61,20 @@ def is_int_number(s):
 
 
 class Linux_ATServer():
+    """
+    linux atserver
+    """
     def __init__(self):
+        """
+        init
+        """
         self.server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
     def response(self):
+        """
+        server
+        :return:
+        """
         server = self.server
         server.bind((ip, port))
         server.listen(5)

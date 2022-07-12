@@ -43,11 +43,22 @@ cmd_get_diseqc_data = '81 82 00 04 00 00 01 01 00 00 00 00 83 84'  # get_all_sta
 
 class EktRdsp():
     def __init__(self, com_name, baud_rate, timeout):
+        """
+        init
+        :param com_name: com number
+        :param baud_rate: baud rate
+        :param timeout: timeout
+        """
         com = serial.Serial(com_name, baud_rate, timeout=timeout)
         self.com = com
         res = self.com.isOpen()
 
     def send_rec_serial(self, input_cmd):
+        """
+        send and receive serial data
+        :param input_cmd: input cmd
+        :return: receive serial data
+        """
         # hex_cmd = bytes.fromhex(input_cmd)    # python3
         hex_cmd = bytearray.fromhex(input_cmd)  # python2
         # print(hex_cmd)
@@ -73,6 +84,11 @@ class EktRdsp():
         return rec_data
 
     def send_rec_serial_diseqc(self, input_cmd):
+        """
+        send and receive serial diseqc data
+        :param input_cmd: input cmd
+        :return: serial diseqc data
+        """
         # hex_cmd = bytes.fromhex(input_cmd)    # python3
         hex_cmd = bytearray.fromhex(input_cmd)  # python2
         # print(hex_cmd)
@@ -84,13 +100,14 @@ class EktRdsp():
         start_time = time.time()
         while True:
             # Stop and wait for the data
-            time.sleep(0.5)
+            time.sleep(5)
             count = self.com.inWaiting()
             rec_data = self.com.read(count)
             if count == 0:
                 continue
             else:
                 rec_data = str(binascii.b2a_hex(rec_data))
+                # print "rec_data"
                 # print rec_data
                 if rec_data[-4:] == b"8384" and rec_data[:4] == b"8182":
                     # print "*"*50
