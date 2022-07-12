@@ -251,3 +251,5 @@
 2022-07-12 15:42:09,801 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:74] - INFO: ('192.168.1.154', 39978) connected
 2022-07-12 15:42:09,801 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:80] - INFO: receive data   ':DOC:CONFIG \r\n'
 2022-07-12 15:42:10,395 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:80] - INFO: receive data   ''
+2022-07-12 16:19:59,588 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:79] - INFO: ('127.0.0.1', 62874) connected
+2022-07-12 16:20:03,230 - C:/Users/ivan.zhao/PycharmProjects/linux_atserver/linux_atserver.py[line:84] - INFO: receive data   ''

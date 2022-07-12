@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-import configparser
+import ConfigParser
 
 
 class EktFile():
@@ -13,7 +13,7 @@ class EktFile():
         init
         :param path: ATServer.ini path
         """
-        self.config = configparser.ConfigParser()
+        self.config = ConfigParser.ConfigParser()
         self.config.read(path)
 
     def get_config_data(self, section, item):
