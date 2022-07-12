@@ -76,6 +76,8 @@ class EktRdsp():
         # hex_cmd = bytes.fromhex(input_cmd)    # python3
         hex_cmd = bytearray.fromhex(input_cmd)  # python2
         # print(hex_cmd)
+        self.com.flushInput()  # 清除缓存区数据。当代码在循环中执行时，不加这句代码会造成count累加
+        time.sleep(0.1)
 
         self.com.write(hex_cmd)
 

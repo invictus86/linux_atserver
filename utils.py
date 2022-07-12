@@ -1,3 +1,8 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+import shutil
+import os
+
 def deal_diseqc_data(str_data):
     load_h = str_data[4:6]
     load_l = str_data[6:8]
@@ -42,6 +47,61 @@ def deal_diseqc_data(str_data):
         unpack_data += new_data
     return unpack_data
 
+
+def remove_file(del_file):
+    """
+    删除指定文件
+    :param del_file: 待删除文件
+    :return:
+    """
+    if os.path.isfile(del_file):
+        os.remove(del_file)
+    print(del_file + " was removed!")
+
+
+def cope_file_src_dst(src_file, dst_file):
+    """
+    从源目录复制文件到指定目录
+    :param src_file: 源文件
+    :param dst_file: 指定目录文件
+    :return:
+    """
+    shutil.copy2(src_file, dst_file)
+
+
+def move_file_src_dst(src_file, dst_file):
+    """
+    从源目录剪切文件到指定目录
+    :param src_file: 源文件
+    :param dst_file: 指定目录文件
+    :return:
+    """
+    shutil.move(src_file, dst_file)
+
+
+def cope_floder_src_dst(src_file, dst_file):
+    """
+    从源目录复制文件夹到指定目录
+    :param src_file: 源文件
+    :param dst_file: 指定目录文件
+    :return:
+    """
+    shutil.copytree(src_file, dst_file)
+
+
+def del_all_file(filepath):
+    """
+    删除某一目录下的所有文件与文件夹
+    :param filepath: 路径
+    :return:
+    """
+    del_list = os.listdir(filepath)
+    for f in del_list:
+        file_path = os.path.join(filepath, f)
+        if os.path.isfile(file_path):
+            os.remove(file_path)
+        elif os.path.isdir(file_path):
+            shutil.rmtree(file_path)
 
 if __name__ == '__main__':
     str_data = "818200140003030102020400000000000000601039700000000000200200008384"

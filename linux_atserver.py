@@ -8,7 +8,8 @@ import socket
 import threading
 from ekt_streamxpress_lib import StreamXpress
 from ekt_rds_lib import *
-from read_atserver_ini import GetATserverIni
+from ekt_file_lib import EktFile
+from utils import *
 import logging
 import shutil
 import re
@@ -39,7 +40,11 @@ com_name = 'COM4'
 baud_rate = 115200
 timeout = 5
 
-streamxpress = StreamXpress(wsdl_path)
+try:
+    streamxpress = StreamXpress(wsdl_path)
+except:
+    logging.info("streamxpress not connected")
+
 rdsp = EktRdsp(com_name, baud_rate, timeout=timeout)
 
 ip = "192.168.1.41"
@@ -498,10 +503,49 @@ class Linux_ATServer():
 
                 elif data == ":DOC:CONFIG \r\n":
                     path = r'./ATServer.ini'
-                    atserver_ini = GetATserverIni(path)
+                    atserver_ini = EktFile(path)
                     all_config = atserver_ini.get_all_config()
                     conn.send("{}SUCCESS {}".format(data[:12], all_config))
 
+                elif data[:10] == ":DOC:COPY ":
+                    list_split_data = data.split()
+                    if len(list_split_data) == 3:
+                        pass
+                    else:
+                        conn.send("send data format err, data    {}".format(data))
+                        continue
+                    src = list_split_data[1]
+                    dst = list_split_data[2]
+                    # print src
+                    # print dst
+                    cope_file_src_dst(src, dst)
+                    conn.send("{}SUCCESS".format(data[:10]))
+
+                elif data[:10] == ":DOC:MOVE ":
+                    list_split_data = data.split()
+                    if len(list_split_data) == 3:
+                        pass
+                    else:
+                        conn.send("send data format err, data    {}".format(data))
+                        continue
+                    src = list_split_data[1]
+                    dst = list_split_data[2]
+                    # print src
+                    # print dst
+                    move_file_src_dst(src, dst)
+                    conn.send("{}SUCCESS".format(data[:10]))
+
+                elif data[:9] == ":DOC:DEL ":
+                    list_split_data = data.split()
+                    if len(list_split_data) == 2:
+                        pass
+                    else:
+                        conn.send("send data format err, data    {}".format(data))
+                        continue
+                    del_file = list_split_data[1]
+                    # del_file
+                    remove_file(del_file)
+                    conn.send("{}SUCCESS".format(data[:9]))
 
 
 

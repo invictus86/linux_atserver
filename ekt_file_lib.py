@@ -3,7 +3,7 @@
 import configparser
 
 
-class GetATserverIni():
+class EktFile():
     def __init__(self, path):
         self.config = configparser.ConfigParser()
         self.config.read(path)
@@ -57,6 +57,6 @@ class GetATserverIni():
 
 if __name__ == '__main__':
     path = r'D:\Loren_projects\DCA4715pATX_test_package\ATServer.ini'
-    atserver_ini = GetATserverIni(path)
+    atserver_ini = EktFile(path)
     all_config = atserver_ini.get_all_config()
     print all_config
