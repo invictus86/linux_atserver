@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 import shutil
 import os
+import time
 
 
 def deal_diseqc_data(str_data):
@@ -73,6 +74,7 @@ def cope_file_src_dst(src_file, dst_file):
     :return:
     """
     shutil.copy2(src_file, dst_file)
+    time.sleep(3)
 
 
 def move_file_src_dst(src_file, dst_file):
