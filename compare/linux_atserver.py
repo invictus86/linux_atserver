@@ -30,42 +30,41 @@ logging.basicConfig(level=logging.INFO,  # 控制台打印的日志级别
                     # a是追加模式,默认如果不写的话,就是追加模式
                     format='%(asctime)s - %(pathname)s[line:%(lineno)d] - %(levelname)s: %(message)s')  # 日志格式
 
-# command = "ls -l /dev/ttyUSB*"
-# results = os.popen(command).readlines()
-# list_com = []
-# for result in results:
-#     match_data = re.findall("/dev/ttyUSB\d+?", result)[0]
-#     list_com.append(match_data)
-# print list_com
-
-
 wsdl_path = r"./SpRc.wsdl"
-com_name = 'COM4'
+# com_name = '/dev/ttyUSB1'
 baud_rate = 115200
 timeout = 5
-ip = "192.168.1.41"
+ip = "192.168.1.42"
 port = 8900
+com_name = ""
 
-# for com_name in list_com:
-#     try:
-#         rdsp = EktRdsp(com_name, baud_rate, timeout=timeout)
-#         rec_data = rdsp.send_rec_serial(cmd_get_all_status)
-# 	if rec_data=="":
-# 	    continue
-# 	else:
-# 	    break
-#     except:
-#         continue
-# print com_name
-# rdsp = EktRdsp(com_name, baud_rate, timeout=timeout)
+# find com name
+command = "ls -l /dev/ttyUSB*"
+results = os.popen(command).readlines()
+list_com = []
+for result in results:
+    match_data = re.findall("/dev/ttyUSB\d+?", result)[0]
+    list_com.append(match_data)
+print list_com
 
+for com_name in list_com:
+    try:
+        rdsp = EktRdsp(com_name, baud_rate, timeout=timeout)
+        rec_data = rdsp.send_rec_serial(cmd_get_all_status)
+        if rec_data == "":
+            continue
+        else:
+            break
+    except:
+        continue
+print com_name
+rdsp = EktRdsp(com_name, baud_rate, timeout=timeout)
 
+# connect streamxpress
 try:
     streamxpress = StreamXpress(wsdl_path)
 except:
     logging.info("streamxpress not connected")
-
-rdsp = EktRdsp(com_name, baud_rate, timeout=timeout)
 
 
 def is_int_number(s):
