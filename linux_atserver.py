@@ -519,7 +519,7 @@ class Linux_ATServer():
                             conn.send("send data format err, data    {}".format(data))
                             continue
                         src = list_split_data[1]
-                        dst = list_split_data[2]
+                        dst = list_split_data[2].replace("\r", "").replace("\n", "")
                         # print src
                         # print dst
                         cope_file_src_dst(src, dst)
@@ -533,7 +533,7 @@ class Linux_ATServer():
                             conn.send("send data format err, data    {}".format(data))
                             continue
                         src = list_split_data[1]
-                        dst = list_split_data[2]
+                        dst = list_split_data[2].replace("\r", "").replace("\n", "")
                         # print src
                         # print dst
                         move_file_src_dst(src, dst)
@@ -554,7 +554,8 @@ class Linux_ATServer():
                     else:
                         print(data)
                         print("unknown message")
-                        del conn
+                        logging.info("unknown message")
+                        continue
                 except:
                     logging.info("An Exception Occurs")
                     continue
