@@ -547,7 +547,7 @@ class Linux_ATServer():
                         # print dst
                         res = cope_file_src_dst(src, dst)
                         if res != 0:
-                            conn.send("copy file {} to {} false".format(src, dst))
+                            conn.send("copy file {} to {} Fail".format(src, dst))
                         else:
                             conn.send("{}SUCCESS".format(data[:10]))
 
@@ -564,7 +564,7 @@ class Linux_ATServer():
                         # print dst
                         res = move_file_src_dst(src, dst)
                         if res != 0:
-                            conn.send("move file {} to {} false".format(src, dst))
+                            conn.send("move file {} to {} Fail".format(src, dst))
                         else:
                             conn.send("{}SUCCESS".format(data[:10]))
 
