@@ -545,8 +545,11 @@ class Linux_ATServer():
                         dst = list_split_data[2].replace("\r", "").replace("\n", "")
                         # print src
                         # print dst
-                        cope_file_src_dst(src, dst)
-                        conn.send("{}SUCCESS".format(data[:10]))
+                        res = cope_file_src_dst(src, dst)
+                        if res != 0:
+                            conn.send("copy file {} to {} false".format(src, dst))
+                        else:
+                            conn.send("{}SUCCESS".format(data[:10]))
 
                     elif data[:10] == ":DOC:MOVE ":
                         list_split_data = data.split()
@@ -559,8 +562,11 @@ class Linux_ATServer():
                         dst = list_split_data[2].replace("\r", "").replace("\n", "")
                         # print src
                         # print dst
-                        move_file_src_dst(src, dst)
-                        conn.send("{}SUCCESS".format(data[:10]))
+                        res = move_file_src_dst(src, dst)
+                        if res != 0:
+                            conn.send("move file {} to {} false".format(src, dst))
+                        else:
+                            conn.send("{}SUCCESS".format(data[:10]))
 
                     elif data[:9] == ":DOC:DEL ":
                         list_split_data = data.split()

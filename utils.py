@@ -70,9 +70,9 @@ def cope_file_src_dst(src_file, dst_file):
     :param dst_file: 指定目录文件
     :return:
     """
-    os.system('cp {} {}'.format(src_file, dst_file))
+    res = os.system('cp {} {}'.format(src_file, dst_file))
     os.system('sync')
-
+    return res
 
 def move_file_src_dst(src_file, dst_file):
     """
@@ -81,8 +81,9 @@ def move_file_src_dst(src_file, dst_file):
     :param dst_file: 指定目录文件
     :return:
     """
-    os.system('mv {} {}'.format(src_file, dst_file))
+    res = os.system('mv {} {}'.format(src_file, dst_file))
     os.system('sync')
+    return res
 
 
 if __name__ == '__main__':
