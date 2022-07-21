@@ -1,16 +1,16 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import os
 import re
 import sys
 import socket
 import logging
+import argparse
 import threading
 from utils import *
-from ekt_rds_lib import *
-from ekt_file_lib import EktFile
-from ekt_streamxpress_lib import StreamXpress
+from ekt_lib.ekt_rds_lib import *
+from ekt_lib.ekt_file_lib import EktFile
+from ekt_lib.ekt_streamxpress_lib import StreamXpress
 
 # # get local ip
 # addrs = socket.getaddrinfo(socket.gethostname(), None)
@@ -30,42 +30,60 @@ logging.basicConfig(level=logging.INFO,  # 控制台打印的日志级别
                     # a是追加模式,默认如果不写的话,就是追加模式
                     format='%(asctime)s - %(pathname)s[line:%(lineno)d] - %(levelname)s: %(message)s')  # 日志格式
 
-# command = "ls -l /dev/ttyUSB*"
-# results = os.popen(command).readlines()
-# list_com = []
-# for result in results:
-#     match_data = re.findall("/dev/ttyUSB\d+?", result)[0]
-#     list_com.append(match_data)
-# print list_com
+
+def auto_test_usage():
+    parser = argparse.ArgumentParser(description="run optional test case on stb-tester by http requests")
+    parser.add_argument("-i", "--ip", default='192.168.1.42', help="the ip address of ekt tester")
+    parser.add_argument("-p", "--port", default='8900', help="linux server port")
+    parser.add_argument("-ATserver_f", "--ATserver_file", default='ATServer.ini', help="ATServer config file name")
+    parser.add_argument("-wsdl_f", "--WSDL_file", default='SpRc.wsdl', help="ATServer config file name")
+    run_args = parser.parse_args()
+
+    print("ekt-tester test command config:------------------------------><")
+    print("ip: %s" % run_args.ip)
+    print("port: %s" % run_args.port)
+    print("ATserver_file: %s" % run_args.ATserver_file)
+    print("WSDL_file: %s" % run_args.WSDL_file)
+    return run_args
 
 
-wsdl_path = r"./SpRc.wsdl"
-com_name = 'COM4'
+run_args = auto_test_usage()
+ip = run_args.ip
+port = int(run_args.port)
+path = run_args.ATserver_file
+wsdl_path = run_args.WSDL_file
+
 baud_rate = 115200
 timeout = 5
-ip = "192.168.1.41"
-port = 8900
+com_name = ""
 
-# for com_name in list_com:
-#     try:
-#         rdsp = EktRdsp(com_name, baud_rate, timeout=timeout)
-#         rec_data = rdsp.send_rec_serial(cmd_get_all_status)
-# 	if rec_data=="":
-# 	    continue
-# 	else:
-# 	    break
-#     except:
-#         continue
-# print com_name
-# rdsp = EktRdsp(com_name, baud_rate, timeout=timeout)
+# find com name
+command = "ls -l /dev/ttyUSB*"
+results = os.popen(command).readlines()
+list_com = []
+for result in results:
+    match_data = re.findall("/dev/ttyUSB\d+?", result)[0]
+    list_com.append(match_data)
+print list_com
 
+for com_name in list_com:
+    try:
+        rdsp = EktRdsp(com_name, baud_rate, timeout=timeout)
+        rec_data = rdsp.send_rec_serial(cmd_get_all_status)
+        if rec_data == "":
+            continue
+        else:
+            break
+    except:
+        continue
+print com_name
+rdsp = EktRdsp(com_name, baud_rate, timeout=timeout)
 
+# connect streamxpress
 try:
     streamxpress = StreamXpress(wsdl_path)
 except:
     logging.info("streamxpress not connected")
-
-rdsp = EktRdsp(com_name, baud_rate, timeout=timeout)
 
 
 def is_int_number(s):
@@ -530,7 +548,6 @@ class Linux_ATServer():
                         conn.send(str_text)
 
                     elif data == ":DOC:CONFIG \r\n":
-                        path = r'./ATServer.ini'
                         atserver_ini = EktFile(path)
                         all_config = atserver_ini.get_all_config()
                         conn.send("{}SUCCESS {}".format(data[:12], all_config))
@@ -546,8 +563,11 @@ class Linux_ATServer():
                         dst = list_split_data[2].replace("\r", "").replace("\n", "")
                         # print src
                         # print dst
-                        cope_file_src_dst(src, dst)
-                        conn.send("{}SUCCESS".format(data[:10]))
+                        res = cope_file_src_dst(src, dst)
+                        if res != 0:
+                            conn.send("copy file {} to {} Fail".format(src, dst))
+                        else:
+                            conn.send("{}SUCCESS".format(data[:10]))
 
                     elif data[:10] == ":DOC:MOVE ":
                         list_split_data = data.split()
@@ -560,8 +580,11 @@ class Linux_ATServer():
                         dst = list_split_data[2].replace("\r", "").replace("\n", "")
                         # print src
                         # print dst
-                        move_file_src_dst(src, dst)
-                        conn.send("{}SUCCESS".format(data[:10]))
+                        res = move_file_src_dst(src, dst)
+                        if res != 0:
+                            conn.send("move file {} to {} Fail".format(src, dst))
+                        else:
+                            conn.send("{}SUCCESS".format(data[:10]))
 
                     elif data[:9] == ":DOC:DEL ":
                         list_split_data = data.split()
