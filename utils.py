@@ -63,7 +63,7 @@ def remove_file(del_file):
     os.system('sync')
 
 
-def cope_file_src_dst(src_file, dst_file):
+def copy_file_src_dst(src_file, dst_file):
     """
     从源目录复制文件到指定目录
     :param src_file: 源文件
@@ -73,6 +73,7 @@ def cope_file_src_dst(src_file, dst_file):
     res = os.system('cp {} {}'.format(src_file, dst_file))
     os.system('sync')
     return res
+
 
 def move_file_src_dst(src_file, dst_file):
     """

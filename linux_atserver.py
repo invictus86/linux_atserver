@@ -563,7 +563,7 @@ class Linux_ATServer():
                         dst = list_split_data[2].replace("\r", "").replace("\n", "")
                         # print src
                         # print dst
-                        res = cope_file_src_dst(src, dst)
+                        res = copy_file_src_dst(src, dst)
                         if res != 0:
                             conn.send("copy file {} to {} Fail".format(src, dst))
                         else:
