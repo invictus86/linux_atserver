@@ -545,7 +545,7 @@ class Linux_ATServer():
                         dst = list_split_data[2].replace("\r", "").replace("\n", "")
                         # print src
                         # print dst
-                        cope_file_src_dst(src, dst)
+                        copy_file_src_dst(src, dst)
                         conn.send("{}SUCCESS".format(data[:10]))
 
                     elif data[:10] == ":DOC:MOVE ":
