@@ -32,6 +32,10 @@ logging.basicConfig(level=logging.INFO,  # 控制台打印的日志级别
 
 
 def auto_test_usage():
+    """
+    sample: nohup python2 -u linux_atserver.py -i 192.168.1.167 -p 8900 -ATserver_f ATServer.ini -wsdl_f SpRc.wsdl > linux_atserver.out 2>&1 &
+    :return:
+    """
     parser = argparse.ArgumentParser(description="run optional test case on stb-tester by http requests")
     parser.add_argument("-i", "--ip", default='192.168.1.42', help="the ip address of ekt tester")
     parser.add_argument("-p", "--port", default='8900', help="linux server port")
