@@ -1,6 +1,7 @@
 # 与RDSP板接口说明
 
 ## streamxpress
+
     command_dta_type = ":DTA:TYPE {} {}\r\n"
     command_dta_freq = ":DTA:FREQ {}\r\n"
     command_dta_symrate = ":DTA:SYMRATE {}\r\n"
@@ -22,6 +23,7 @@
     command_dta_stop = ":DTA:STOP \r\n"
 
 ## RDS
+
     command_rds_power_on = ":RDS:POWER_ON \r\n"
     command_rds_power_off = ":RDS:POWER_OFF \r\n"
     command_rds_usb_pc = ":RDS:USB_PC \r\n"
@@ -31,6 +33,7 @@
     command_rds_rf_off = ":RDS:RF_OFF \r\n"
 
 ## RDSP
+
     command_rdsp_connection = ":RDSP:CONNECTION \r\n"
     command_rdsp_mcu_info = ":RDSP:MCU_INFO\r\n"
     command_rdsp_hw_data = ":RDSP:STB_HW_DATA\r\n"
@@ -56,15 +59,32 @@
     command_rdsp_all_key_up = ":RDSP:ALL_KEY_UP \r\n"
 
 ## RJ45
+
     command_rdsp_rj45_on = ":RDSP:RJ45_ON \r\n"
     command_rdsp_rj45_off = ":RDSP:RJ45_OFF \r\n"
 
 ## FILE
+
     command_doc_copy = ":DOC:COPY \r\n"
     command_doc_move = ":DOC:MOVE \r\n"
     command_doc_del = ":DOC:DEL \r\n"
     command_doc_config = ":DOC:CONFIG \r\n"
 
 ## APP
+
     command_app_exec = ":APP:EXEC \r\n"
     command_app_close = ":APP:CLOSE \r\n"
+
+## 硬件连接
+
+    linuxATServer 为window端ATserver的linux版本，使用的接口完全兼容，使用方法：
+    1、RDS plus板的串口连接在linux电脑上，通常为EKT TESTER，用于EKT TESTER和RDS plus板的串口通讯
+    2、RDS plus板的连接pc端的usb接口，与EKT TESTER相连，用于usb升级过程中的文件传输
+
+## 注意事项
+
+    1、针对首次使用linuxATServer系统，需要设置linux系统下的U盘插拔自动mount，具体方式详见#168962中的 10-usbstorage.rules
+    2、启动服务命令：sample: nohup python2 -u linux_atserver.py -i 192.168.1.167 -p 8900 -ATserver_f ATServer.ini -wsdl_f
+    SpRc.wsdl > linux_atserver.out 2>&1 &
+    可以根据实际情况调整各参数
+    3、linux_atserver_window_debug.py脚本是在window系统下调试ATserver接口使用，实际linux ATserver并未使用改文件
